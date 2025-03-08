@@ -1,4 +1,6 @@
-<!-- side bar script -->
+
+<script>
+    <!-- side bar script -->
     // دالة لمحاكاة النقر
     function simulateClick(elem) {
         var evt = new MouseEvent('click', {
@@ -155,3 +157,4 @@
             console.error('خطأ في دالة selectReward:', error);
         }
     }
+</script>
