@@ -1,4 +1,3 @@
-
 <script>
     <!-- side bar script -->
     // دالة لمحاكاة النقر
@@ -145,11 +144,9 @@
             if (data.type.includes('Payout')) {
                 payoutInputs.style.display = 'block';
                 buttonText.textContent = 'Continue';
-                actionButton.onclick = function() { alert('تم تقديم طلب الدفع!'); };
             } else {
                 payoutInputs.style.display = 'none';
                 buttonText.textContent = 'Redeem';
-                actionButton.onclick = function() { alert('تم استرداد بطاقة الهدايا!'); };
             }
     
             goToPage2();
