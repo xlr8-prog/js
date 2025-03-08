@@ -1,4 +1,4 @@
-
+<script>
     // دالة للانتقال إلى الصفحة 1
     function goToPage1() {
         document.getElementById("homePage").style.display = "none";
@@ -62,3 +62,4 @@
     //     document.getElementById("page2").style.display = "none";
     // };
 
+</script>
