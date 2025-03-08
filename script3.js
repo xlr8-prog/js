@@ -1,4 +1,4 @@
-
+<script>
 
 function pad(number) {
     return number < 10 ? '0' + number : number;
@@ -23,3 +23,10 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+</script>
+
+
+
+
+
