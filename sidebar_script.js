@@ -133,7 +133,7 @@
             const selectedDescription = document.getElementById('selected-description');
             const rewardCard = document.getElementById('reward-card');
             const payoutInputs = document.getElementById('payout-inputs');
-            const actionButton = document.getElementById('action-button');
+            // const actionButton = document.getElementById('action-button');
             const buttonText = document.getElementById('button-text');
     
             if (selectedImage) selectedImage.src = data.src || '';
