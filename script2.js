@@ -1,39 +1,41 @@
 <script>
-	        function commaSeparateNumber(val) {
-        while (/(\d+)(\d{3})/.test(val.toString())) {
-        val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-        }
-        return val;
-        }
 
-        function countup() {
-        $('.stat_holder').each(function() {
-        var $this = $(this),
-        countTo = $this.attr('data-count');
+    // script2 
+    function commaSeparateNumber(val) {
+while (/(\d+)(\d{3})/.test(val.toString())) {
+val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+}
+return val;
+}
 
-        $({
-        countNum: $this.text()
-        }).animate({
-        countNum: countTo
-        },
+function countup() {
+$('.stat_holder').each(function() {
+var $this = $(this),
+countTo = $this.attr('data-count');
 
-        {
-        duration: 3000,
-        easing: 'linear',
-        step: function() {
-        $this.text(commaSeparateNumber(Math.floor(this.countNum)));
-        },
-        complete: function() {
-        $this.text(commaSeparateNumber(this.countNum));
-        //alert('finished');
-        }
-        }
-        );
-        });
-        }
+$({
+countNum: $this.text()
+}).animate({
+countNum: countTo
+},
 
-        $().ready(function(){
-            countup();
-        });
+{
+duration: 3000,
+easing: 'linear',
+step: function() {
+$this.text(commaSeparateNumber(Math.floor(this.countNum)));
+},
+complete: function() {
+$this.text(commaSeparateNumber(this.countNum));
+//alert('finished');
+}
+}
+);
+});
+}
 
-</script>
+$().ready(function(){
+    countup();
+});
+
+</script> 
