@@ -1,4 +1,4 @@
-<script>
+
 
     // script2 
     function commaSeparateNumber(val) {
@@ -38,4 +38,3 @@ $().ready(function(){
     countup();
 });
 
-</script> 
