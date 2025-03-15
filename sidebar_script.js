@@ -1,4 +1,3 @@
-<script>
     <!-- side bar script -->
     // دالة لمحاكاة النقر
     function simulateClick(elem) {
@@ -154,4 +153,3 @@
             console.error('خطأ في دالة selectReward:', error);
         }
     }
-</script>
